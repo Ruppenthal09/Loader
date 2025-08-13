@@ -1,0 +1,98 @@
+/* ===== Estilo geral da página ===== */
+body {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Estilo dos botões ===== */
+.buttons {
+    margin-top: 20px;
+}
+button {
+    margin: 0 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #00ff88;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #00cc6a;
+}
+
+/* ===== Loader Versão 1 ===== */
+.loader-v1 {
+    display: flex;
+    gap: 8px;
+}
+.loader-v1 span {
+    width: 12px;
+    height: 12px;
+    background-color: #00ff88;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+.loader-v1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.loader-v1 span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* ===== Loader Versão 2 ===== */
+.loader-v2 {
+    display: flex;
+    gap: 10px;
+}
+.loader-v2 span {
+    width: 14px;
+    height: 14px;
+    background-color: #ff8800;
+    border-radius: 50%;
+    animation: bounce 0.5s infinite alternate;
+}
+.loader-v2 span:nth-child(2) {
+    animation-delay: 0.15s;
+}
+.loader-v2 span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+/* ===== Loader Versão 3 ===== */
+.loader-v3 {
+    display: flex;
+    gap: 12px;
+}
+.loader-v3 span {
+    width: 16px;
+    height: 16px;
+    background-color: #0088ff;
+    border-radius: 50%;
+    animation: bounce 0.4s infinite alternate;
+}
+.loader-v3 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.loader-v3 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+/* ===== Animação usada em todas as versões ===== */
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+    to {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
